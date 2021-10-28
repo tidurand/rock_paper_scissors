@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link type="text/css" rel="stylesheet" href="game.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+  
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+<section id="top">
+  <p class="title">ROCK</br>PAPER</br>SCISSORS</p>
+  <div class="score">
+    <p class="text_score">SCORE</p>
+    <p id="number_score" class="number_score">0</p>
+  </div>
+</section>
+<section id="game">
+  <button id="rock" class="rock" onclick="game('rock')"><div class="waiting"></div></button>
+  <button id="paper" class="paper" onclick="game('paper')"><div class="waiting"></div></button>
+  <button id="scissors" class="scissors" onclick="game('scissors')"><div class="waiting"></div></button>
+  <div class="end">
+    <div class="result"><p></p></div>
+    <button class="again" onclick="play_again()">PLAY AGAIN</button>
+  </div>
+</section>
+<button id="rules" onclick="open_rules()">RULES</button>
+<div id="print_rules">
+  <p>RULES</p>
+  <button value="close" onclick="close_rules()"><img src="close.svg" height="20px" width="20px"></img></button>
+  <img class="img" src="rules.svg" height="200px" width="200px"></img>
+</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
